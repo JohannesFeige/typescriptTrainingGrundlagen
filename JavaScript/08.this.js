@@ -1,30 +1,30 @@
-class Dog {
-    constructor(name) {
-        this.name = name;
-    }
+// class Dog {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-    sayHello() {
-        console.log(`Wuff, my name is ${this.name}`);
-    }
-}
+//   sayHello() {
+//     console.log(`Wuff, my name is ${this.name}`);
+//   }
+// }
 
-class Cat {
-    constructor(name) {
-        this.name = name;
-    }
+// class Cat {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-    sayHello() {
-        console.log(`Meow, my name is ${this.name}`);
-    }
-}
+//   sayHello() {
+//     console.log(`Meow, my name is ${this.name}`);
+//   }
+// }
 
-const dog = new Dog('Bello');
+// const dog = new Dog('Bello');
 
-const cat = new Cat('Kitty');
+// const cat = new Cat('Kitty');
 
-dog.sayHello();
-cat.sayHello();
+// dog.sayHello();
+// cat.sayHello();
 
-dog.sayHello.call(cat);
+// dog.sayHello.call(cat);
 
-cat.sayHello.call(dog);
+// cat.sayHello.call(dog);

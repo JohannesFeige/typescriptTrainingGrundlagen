@@ -1,38 +1,44 @@
-
 // #region statement
 function printStatement(message) {
-    console.log(message);
+  console.log(message);
 
-    return {
-        result: 'success'
-    };
+  return {
+    result: 'success'
+  };
 }
 
 printStatement('foo statement');
 
 //#endregion
 
-// expression
+// #region expression
 var printExpression = function(message) {
-    console.log(message);
+  console.log(message);
 
-    return {
-        result: 'success'
-    };
-}
+  return {
+    result: 'success'
+  };
+};
 
 printExpression('foo expression');
 
-// anonymous
-setTimeout(function () {
-    console.log('done');
-}, 1000)
+// #endregion
 
+// #region anonymous
+setTimeout(function() {
+  console.log('done');
+}, 1000);
+
+//#endregion
+
+// #region misc
 // Funktionen können Eigenschaften haben:
 
 printStatement.myProperty = 42;
 
 console.log(printStatement.myProperty);
+
+//#endregion
 
 // function sayHello2(name) {
 //   console.log(`Hello ${name}!`);

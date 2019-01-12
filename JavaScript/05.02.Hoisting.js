@@ -11,7 +11,7 @@
 // sayHello2('Team Microsoft Solutions');
 
 // // nicht jedoch bei function expressions; auch nicht bei var:
-// sayHello('Team Microsoft Solutions'); 
+// sayHello('Team Microsoft Solutions');
 // const sayHello = function(name) {
 //   console.log(`Hello ${name}!`);
 // };

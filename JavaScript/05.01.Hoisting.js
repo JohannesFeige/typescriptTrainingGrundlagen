@@ -1,7 +1,7 @@
 function hoist() {
-  console.log(x);  
+  console.log(x);
   var x = 23;
-  console.log(x);  
+  console.log(x);
 }
 
 hoist();

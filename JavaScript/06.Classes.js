@@ -1,17 +1,19 @@
-class Dog {    
-    constructor(name, weight) {
-        this.name = name;
-        this.weight = weight;
-    }
+class Dog {
+  constructor(name, weight) {
+    this.name = name;
+    this.weight = weight;
+  }
 
-    sayHello() {
-        console.log(`Wuff, my name is ${this.name}!`);
-    }
+  sayHello() {
+    console.log(`Wuff, my name is ${this.name}!`);
+  }
 }
 
 const bello = new Dog('Bello', 15);
 
 bello.sayHello();
+
+// extends
 
 // class Animal {
 //     constructor(weight) {

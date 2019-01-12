@@ -8,7 +8,7 @@
 // }
 
 // sayHello();
-// console.log(hello); 
+// console.log(hello);
 
 // // -- Block Scope
 // // nur für const und let
@@ -17,14 +17,14 @@
 //   console.log(hello);
 // }
 
-// console.log(hello); 
+// console.log(hello);
 
 // -- lexical scoping
 // ein Scope kann auf seinen äußeren Scope zugreifen
 // Grundsätzlich wird beim Zugriff auf einen Variable zunächst geschaut, ob diese im aktuellen Scope definiert ist.
 // Anschließend werden die äußeren Scopes von innen nach außen durchsucht (bis global; wichtig bei der Verwendung von var).
 function outerFunction(message) {
-    console.log(message, this);
+  console.log(message, this);
   const outer = 'I come from outer';
 
   function innerFunction() {
@@ -35,7 +35,7 @@ function outerFunction(message) {
 
   console.log(outer, 'from outer');
   innerFunction();
-//   console.log(inner, 'from outer'); 
+  //   console.log(inner, 'from outer');
 }
 
 outerFunction('foo');

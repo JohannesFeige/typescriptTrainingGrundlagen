@@ -9,7 +9,7 @@
 // console.log(hello);
 // sayHello();
 
-// -- Achtung: Naming collisions
+// // -- Achtung: Naming collisions
 // var title = 'TS Basics';
 // var title = 'TS Tutorial'; // this will overwrite the first declaration
 // console.log(title);

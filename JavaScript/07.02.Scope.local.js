@@ -1,5 +1,5 @@
 // // -- Local Scope
-// // Zugriff nur in bestimmten Bereichen des Codes
+// // Zugriff nur innerhalb des Gültigkeitsbereiches
 
 // // --Function scope
 // function sayHello() {
@@ -8,31 +8,34 @@
 // }
 
 // sayHello();
-// console.log(hello); // ReferenceError: hello is not defined
+// console.log(hello); 
 
 // // -- Block Scope
 // // nur für const und let
 // {
-//   const hello = 'Hello Team Microsoft Solutions!';
+//   let hello = 'Hello Team Microsoft Solutions!';
 //   console.log(hello);
 // }
 
-// console.log(hello); // ReferenceError: hello is not defined
+// console.log(hello); 
 
-// // -- lexical scoping
-// // ein Scope kann auf seinen äußeren Scope zugreifen
-// // Grundsätzlich wird beim Zugriff auf einen Variable zunächst geschaut, ob diese im aktuellen Scope definiert ist.
-// // Anschließend werden die äußeren Scopes von innen nach außen durchsucht (bis global; wichtig bei der Verwendung von var).
-// function outerFunction() {
-//   const outer = 'I come from outer';
+// -- lexical scoping
+// ein Scope kann auf seinen äußeren Scope zugreifen
+// Grundsätzlich wird beim Zugriff auf einen Variable zunächst geschaut, ob diese im aktuellen Scope definiert ist.
+// Anschließend werden die äußeren Scopes von innen nach außen durchsucht (bis global; wichtig bei der Verwendung von var).
+function outerFunction(message) {
+    console.log(message, this);
+  const outer = 'I come from outer';
 
-//   function innerFunction() {
-//     const inner = 'I come from inner';
-//     console.log(outer);
-//   }
+  function innerFunction() {
+    const inner = 'I come from inner';
+    console.log(inner, 'from inner');
+    console.log(outer, 'from inner');
+  }
 
-//   innerFunction();
-//   console.log(inner); // ReferenceError: inner is not defined
-// }
+  console.log(outer, 'from outer');
+  innerFunction();
+//   console.log(inner, 'from outer'); 
+}
 
-// outerFunction();
+outerFunction('foo');

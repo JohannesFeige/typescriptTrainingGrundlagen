@@ -1,3 +1,20 @@
+// Abhängig vom Aufruf:
+function foo() {
+  console.log(this);
+}
+
+myObj = {
+  foo() {
+    console.log(this);
+  }
+};
+myObj.foo();
+
+const button = document.getElementById('mySuperButton');
+button.addEventListener('click', function() {
+  //   console.log(this); // button
+});
+
 // class Dog {
 //   constructor(name) {
 //     this.name = name;

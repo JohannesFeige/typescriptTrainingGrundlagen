@@ -33,3 +33,9 @@ setTimeout(function () {
 printStatement.myProperty = 42;
 
 console.log(printStatement.myProperty);
+
+// function sayHello2(name) {
+//   console.log(`Hello ${name}!`);
+// }
+// sayHello2('Team Microsoft Solutions', 'hallo');
+// sayHello2();

@@ -1,4 +1,5 @@
-// statement
+
+// #region statement
 function printStatement(message) {
     console.log(message);
 
@@ -8,6 +9,8 @@ function printStatement(message) {
 }
 
 printStatement('foo statement');
+
+//#endregion
 
 // expression
 var printExpression = function(message) {

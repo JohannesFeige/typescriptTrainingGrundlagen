@@ -1,13 +1,14 @@
-var changeMe = 'changeMe';
-var changeMe = 'first change';
-if (true) {
-  var changeMe = 'second change';
+var foo = 'first';
+function func() {
+  var foo = 'second';
+  console.log(foo);
 }
 
-var change = function() {
-  var changeMe = 'third change';
-};
-
-change();
-
-console.log(changeMe);
+console.log(foo);
+func();
+console.log(foo);
+if (true) {
+  var foo = 'third';
+  console.log(foo);
+}
+console.log(foo);

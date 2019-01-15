@@ -15,7 +15,3 @@
 // const sayHello = function(name) {
 //   console.log(`Hello ${name}!`);
 // };
-
-// 'use strict';
-// x = 23;
-// console.log(x);

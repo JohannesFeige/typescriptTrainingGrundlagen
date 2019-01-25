@@ -21,10 +21,10 @@ let topic: [string, number] = ['JS Types', 10];
 
 // enums
 enum Direction {
-  up,
-  down,
-  left,
-  right
+    up,
+    down,
+    left,
+    right
 }
 
 // any
@@ -35,26 +35,26 @@ console.log(trainingLocation);
 
 // functions
 function returnAttendees(): number {
-  return attendees;
+    return attendees;
 }
 
 console.log(returnAttendees());
 
 // void
 function printTitle(): void {
-  console.log(title);
-  //   return title;
+    console.log(title);
+    //   return title;
 }
 
 // argument types
 function add(a, b): number {
-  return a + b;
+    return a + b;
 }
 
 console.log(add(1, 2));
 
 function multiply(a: number, b: number): number {
-  return a * b;
+    return a * b;
 }
 
 console.log(multiply(2, 3));
@@ -66,7 +66,7 @@ console.log(myMultiply(3, 4));
 
 // optionale Parameter, default Parameter
 function concat(val1: string, val2: string = 'Team', val3?: string): string {
-  return `${val1} ${val2} ${val3 || ''}`;
+    return `${val1} ${val2} ${val3 || ''}`;
 }
 
 console.log(concat('Hello'));
@@ -77,30 +77,30 @@ console.log(concat('Hello', 'Team', 'MS'));
 
 // objects
 let training: { title: string; attendees: number } = {
-  title: 'TS Basics',
-  attendees: 20
+    title: 'TS Basics',
+    attendees: 20
 };
 
 training = {
-  attendees: 15,
-  title: 'other title'
+    attendees: 15,
+    title: 'other title'
 };
 
 // complex type:
 let typeScriptTraining: Training = {
-  title: 'TS Basics',
-  topics: ['JS Types', 'TS Types'],
-  getTopicsAmount: function(f: string): number {
-    return this.topics.length;
-  }
+    title: 'TS Basics',
+    topics: ['JS Types', 'TS Types'],
+    getTopicsAmount: function(f: string): number {
+        return this.topics.length;
+    }
 };
 
 let angularTraining: Training = {
-  title: 'ng Basics',
-  topics: ['Components', 'ng Testing'],
-  getTopicsAmount: function(f: string): number {
-    return this.topics.length;
-  }
+    title: 'ng Basics',
+    topics: ['Components', 'ng Testing'],
+    getTopicsAmount: function(f: string): number {
+        return this.topics.length;
+    }
 };
 
 // type Training = {
@@ -110,9 +110,9 @@ let angularTraining: Training = {
 // };
 
 interface Training {
-  title: string;
-  topics: string[];
-  getTopicsAmount: (filter: string) => number;
+    title: string;
+    topics: string[];
+    getTopicsAmount: (filter: string) => number;
 }
 
 // union types
@@ -122,11 +122,11 @@ age = '30';
 // check types
 let finalValue = 'A String';
 if (typeof finalValue == 'number') {
-  console.log('Final value is a number');
+    console.log('Final value is a number');
 }
 
 // never
 // dieser Teil des Codes wird nie etwas zurückgeben (auch nicht void)!
 function throwError(): never {
-  throw new Error('An error!');
+    throw new Error('An error!');
 }

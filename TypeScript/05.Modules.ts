@@ -1,5 +1,5 @@
 import { PI, calculateCircumference } from './05.Modules/05.circle';
-import { calculateRectangle } from './05.Modules/05.rectangle';
+import calculateRectangle from './05.Modules/05.rectangle';
 
 console.log(PI);
 console.log(calculateCircumference(5));
@@ -21,3 +21,6 @@ console.log(calculateRectangle(5, 3));
 //         });
 //         SystemJS.import('./05.Modules.js');
 //     </script>
+
+// export default
+// as Schlüsselwort -> Pi as MyPi und * as Circle

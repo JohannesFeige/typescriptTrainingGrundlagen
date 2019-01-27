@@ -1,6 +1,18 @@
 <html>
     <title>TS Playground</title>
     <!-- <script src="./01.types.js"></script> -->
-    <script src="./03.Classes.js"></script>
+    <!-- <script src="./05.Modules.js"></script> -->
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.config({
+            baseURL: '/',
+            packages: {
+                '/': {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        SystemJS.import('./05.Modules.js');
+    </script>
     <body></body>
 </html>

@@ -2,3 +2,4 @@
 TypeScript/*.js
 
 TypeScript/.vscode/settings.json
+node_modules/

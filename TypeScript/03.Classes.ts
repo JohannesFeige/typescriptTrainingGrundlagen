@@ -107,4 +107,21 @@
     console.log(sing);
 
     // change public name: string to readonly name: string
+
+    // Polymorphismus
+    // Ducktyping
+
+    function logProjetName(project: Project) {
+        console.log(project.projectName);
+    }
+
+    logProjetName(project);
+
+    const duckProject = {
+        budget: 42,
+        projectName: 'DuckProject',
+        changeName(v) {}
+    };
+
+    logProjetName(duckProject);
 })();

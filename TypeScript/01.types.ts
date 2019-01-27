@@ -25,7 +25,7 @@
         up,
         down,
         left,
-        right
+        right,
     }
 
     // any
@@ -91,12 +91,12 @@
     // objects
     let training: { title: string; attendees: number } = {
         title: 'TS Basics',
-        attendees: 20
+        attendees: 20,
     };
 
     training = {
         attendees: 15,
-        title: 'other title'
+        title: 'other title',
     };
 
     // complex type:
@@ -105,7 +105,7 @@
         topics: ['JS Types', 'TS Types'],
         getTopicsAmount: function(f: string): number {
             return this.topics.length;
-        }
+        },
     };
 
     let angularTraining: Training = {
@@ -113,7 +113,7 @@
         topics: ['Components', 'ng Testing'],
         getTopicsAmount: function(f: string): number {
             return this.topics.length;
-        }
+        },
     };
 
     // type Training = {
@@ -131,6 +131,9 @@
     // union types
     let age: number | string = 30;
     age = '30';
+
+    let specific: 'foo' | 'bar' | 3;
+    specific = 3;
 
     // check types
     let finalValue = 'A String';

@@ -39,7 +39,18 @@
     console.log(filterBy(persons, 'age', 30));
     console.log(filterBy(persons, 'hasGlasses', true));
 
-    console.log(filterBy(workmates, 'age', 27));
+    console.log(filterBy<Workmate, 'age'>(workmates, 'age', 27));
 
     console.log(filterBy(animals, 'legs', 4));
+
+    // extends later
+    class SimpleMath<T extends number | string> {
+        constructor(private baseValue: T, private multiplyValue: T) {}
+        calculate(): number {
+            return +this.baseValue * +this.multiplyValue;
+        }
+    }
+
+    console.log(new SimpleMath(10, 20).calculate());
+    console.log(new SimpleMath('2', '3').calculate());
 })();

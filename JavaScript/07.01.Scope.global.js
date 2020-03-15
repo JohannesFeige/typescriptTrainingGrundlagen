@@ -1,15 +1,15 @@
-// // -- Global Scope
-// // überall verwendbar
-// const hello = 'Hello Team Microsoft Solutions!';
+// -- Global Scope
+// überall verwendbar
+const hello = 'Hello Team Fixit!';
 
-// function sayHello() {
-//   console.log(hello);
-// }
+function sayHello() {
+  console.log(hello);
+}
 
-// console.log(hello);
-// sayHello();
+console.log(hello);
+sayHello();
 
-// // -- Achtung: Naming collisions
-// var title = 'TS Basics';
-// var title = 'TS Tutorial'; // this will overwrite the first declaration
-// console.log(title);
+// -- Achtung: Naming collisions
+var title = 'TS Basics';
+var title = 'TS Tutorial'; // this will overwrite the first declaration
+console.log(title);

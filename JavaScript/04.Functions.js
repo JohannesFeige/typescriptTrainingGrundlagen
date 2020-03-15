@@ -31,5 +31,5 @@ console.log(printStatement.myProperty);
 function sayHello2(name) {
   console.log(`Hello ${name}!`);
 }
-sayHello2('Team Microsoft Solutions', 'hallo');
+sayHello2('Team Fixit', 'hallo');
 sayHello2();

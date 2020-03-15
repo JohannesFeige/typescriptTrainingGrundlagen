@@ -1,28 +1,30 @@
-// Abhängig vom Aufruf:
-function foo() {
-  console.log(this);
-}
+// // Abhängig vom Aufruf:
+// function foo() {
+//   console.log(this);
+// }
 
-myObj = {
-  foo() {
-    console.log(this);
-  }
-};
-myObj.foo();
+// foo();
 
-const button = document.getElementById('mySuperButton');
-button.addEventListener('click', function() {
-  //   console.log(this); // button
-  // // ACHTUNG:
-  const me = this;
-  $.ajax({
-    // ...
-    success: function() {
-      console.log(this); // global object!
-      console.log(me); // button
-    }
-  });
-});
+// myObj = {
+//   foo() {
+//     console.log(this);
+//   },
+// };
+// myObj.foo();
+
+// const button = document.getElementById('mySuperButton');
+// button.addEventListener('click', function() {
+//     console.log(this); // button
+//   // // ACHTUNG:
+//   const me = this;
+//   $.ajax({
+//     // ...
+//     success: function() {
+//       console.log(this); // global object!
+//       console.log(me); // button
+//     },
+//   });
+// });
 
 // class Dog {
 //   constructor(name) {

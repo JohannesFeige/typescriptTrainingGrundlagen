@@ -3,7 +3,7 @@
 
 // --Function scope
 function sayHello() {
-  var hello = 'Hello Team Microsoft Solutions!';
+  var hello = 'Hello Team Fixt!';
   console.log(hello);
 }
 
@@ -13,7 +13,7 @@ function sayHello() {
 // // -- Block Scope
 // // nur für const und let
 // {
-//   let hello = 'Hello Team Microsoft Solutions!';
+//   let hello = 'Hello Team Fixit!';
 //   console.log(hello);
 // }
 
